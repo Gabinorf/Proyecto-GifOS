@@ -1,0 +1,227 @@
+body{
+    background-color: #110038;
+}
+
+header{
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+}
+
+.icon{
+    background-image: url("../images/gifOF_logo_dark.png");
+}
+
+.flecha{
+    filter: invert(100%);
+}
+
+.btn-container{
+    background: #EE3EFE;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.btn-container a{
+    color: #FFFFFF;
+    border: 1px solid #EE3EFE;
+    background: #EE3EFE;
+}
+
+.btn-container a:hover{
+    border: 1px dotted #110038;
+    background: rgb(206,54,219);
+}
+
+.btn-container a:active{
+    border: 1px dotted #110038;
+    background:rgb(206,54,219);
+}
+
+.content-themes:hover .btn-container a{
+    border: 1px dotted #110038;
+    background: rgb(206,54,219);
+}
+
+.hidden{
+    background: #B4B4B4;
+    box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.hidden .day:hover,.hidden .night:hover{ 
+    background: #2E32FB;
+    border: 1px solid rgba(51,53,143,0.20);
+    color: #FFFFFF;
+}  
+
+.hidden .night,.hidden .day{
+    background: #CCCCCC;
+}
+
+.mis_guifos{
+    color: #FFFFFF;
+}
+
+.mis_guifos:hover{
+    border: 1px dotted #FFFFFF;
+}
+
+.mis_guifos:active{
+    border: 1px dotted #110038;
+    opacity: 40%;
+}
+
+.searcher, .capture, .capturer, .upload, .success {
+    background: #B4B4B4;
+    box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.title-search{
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+}
+
+.btn-search{
+    background: #B4B4B4;
+}
+
+.btn-search-input{
+    background: #EE3EFE;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}    
+
+.search{
+    border: 1px solid #B4B4B4;
+    background: #B4B4B4;
+}
+
+.search-input{
+    background: #EE3EFE;
+    border: 1px solid #EE3EFE;
+    color: #FFFFFF;
+}
+
+.lupa{
+    background-image: url("../images/CombinedShape.svg");
+}
+
+.lupa-input{
+    background-image: url("../images/lupa_light.svg");
+}
+
+.search-input:hover{
+    background:rgb(206,54,219);
+}    
+
+                
+.search:active{
+    background: rgb(206,54,219);
+}
+
+.search-hidden{
+    background: #B4B4B4;
+    box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}    
+
+.search-hidden li{
+    background: #CCCCCC;
+    box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}    
+
+.search-hidden li a{
+    border: 1px solid #CCCCCC;
+}
+
+h2,h3,h4{
+    border: 1px solid #2E32FB;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;
+}
+
+.gif-container, .first, .second{
+    background: #B4B4B4;
+    box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.first-title, .bottom{
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+}  
+
+.azul-container{
+    background: #2E32FB;
+    box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.azul-container a{
+    border: 1px solid #2E32FB;
+}
+
+.azul-container a:hover{
+    background: rgb(38,41,204);
+}
+
+.capturer .span, .upload .span, .success .span{
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+}
+    
+.btn-comenzar{
+    background: #EE3EFE;
+    color: #ffffff;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.btn-captura{
+    color: #FFFFFF;
+    background: #EE3EFE;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.label-captura{
+    background: #EE3EFE;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}   
+
+.btn-listo{
+    background-color: #FF6161;
+    color: #FFFFFF;
+}
+
+.label-listo{
+    background: #FF6161;
+}
+
+
+.camara{
+    background-image: url("../images/camera_light.svg");
+}
+
+.recording{
+    background-image: url("../images/recording_dark.svg");
+}
+
+.img-play{
+    background: #EE3EFE;
+}    
+
+.barra-carga .inicio{
+    background: #EE3EFE;
+}
+
+.barra-carga{
+    background: #999999;
+}
+
+.button-repetir{
+    background: #110038;
+    border: 1px solid #B4B4B4;
+    box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+}
+
+.btn-repetir{
+    color: #FFFFFF;
+    border: 1px dotted #110038;
+}
+
+.btn-repetir:hover{
+    border: 1px dotted #FFFFFF;
+    background: #110038;
+}
+
+.barra-carga2 .inicio{
+    background: #EE3EFE;
+}

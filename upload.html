@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>gifOS Gabino</title>
+    <link rel="stylesheet" href="styles/theme1.css" type="text/css">
+    <link rel="stylesheet" href="styles/responsive.css" id="theme" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/responsive.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas:</h1>
+    </header>
+    <div class="container">
+        <nav class="nav-upload">
+            <div class="content-arrow">
+                <a class="center-y" href="https://gabinoguifos.000webhostapp.com/index.html"><img src="images/arrow.svg" alt="arrow"></a>
+                <div class="icon"></div>
+            </div>
+            
+            <div class="content-btns center-y"> 
+                <div class="content-themes">
+                    <div class="btn-container space">
+                        <a>Elegir Tema</a>
+                        <div class="hidden" style="display: none;">
+                            <button class="day" onclick="themes(1)"><u>S</u>ailor Day</button>
+                            <button class="night" onclick="themes(2)">Sailor Night</button>
+                        </div>
+                    </div>    
+                    <span class="btn-container">
+                        <a class="llave" id="dropdown">
+                            <img src="images/dropdown.svg" class="flecha" alt="dropdown">
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+
+        <div class="capture" id="crearguifos">
+            <span class="title-search">Crear Guifos</span>
+            <div class="capture-content">
+                <span class="capture-title"><img src="images/windowImg.png" alt="wiondow image">Aquí podrás crear tus propios guifos</span>
+                <p>
+                    Crear tu <i><b>guifo</b></i> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos 
+                    personalizados. Los pasos para crear tu guifo son:<br>
+                    <b>1)</b> Dar permisos de acceso a la cámara (sólo por el tiempo de uso)<br>
+                    <b>2)</b> Capturar tu momento guifo<br>
+                    <b>3)</b> Revisar el momento<br>
+                    <b>4)</b> Listo para subir y compartir!<br>
+                    ¿Quieres comenzar a crear tu <i><b>guifo</b></i> ahora?   
+                </p>
+                <span class="content-btn-capture">
+                    <a class="button-capture btn-cancelar center-y" href="https://gabinoguifos.000webhostapp.com/index.html">Cancelar</a>
+                    <a class="button-capture btn-comenzar center-y" id="comenzar">Comenzar</a>
+                </span>
+            </div>
+        </div>
+        
+        <div class="capturer">
+            <div class="span"><p>Capturando tu Guifo</p><img src="images/close.svg" alt="boton cerrar" id="cerrar"></div>
+            <div class="capturer-content">
+                <div class="video-container">
+                    <video id="first-video"></video>   
+                    <img id="preview" src="images/camera_light.svg" alt="preview gif">
+                </div>
+                <div class="content-btn-listo">
+                    <div class="content-listo">
+                        <div class="timer"><p id="minutos">00:0</p><p id="segundos">0</p></div>
+                        <div class="play-gif center-y">
+                            <div class="img-play center-y"><img src="images/forward.svg" class="flecha" alt="forward"></div>
+                           
+                           
+                            <div class="barra-carga">
+                                <span class="inicio animacion"></span>
+                                <span class="celdas">
+                                    <span class="celda"></span>
+                                    <span class="celda"></span>
+                                    <span class="celda"></span>
+                                    <span class="celda"></span>
+                                    <span class="celda"></span>
+                                    <span class="celda"></span>
+                                    <span class="celda"></span>
+                                    <span class="celda"></span>
+                                    <span class="celda"></span>
+                                    <span class="celda"></span>
+                                    <span class="celda"></span>
+                                    <span class="celda"></span>
+                                    <span class="celda"></span>
+                                    <span class="celda"></span>
+                                    <span class="celda"></span>
+                                    <span class="celda"></span>
+                                    <span class="celda"></span>
+                                </span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="content-listo">
+                        <label for="btn-listo" id="label-guardar" class="center-y label-captura"><span class="camara"></span></label>
+                        <button class="btn-captura" id="btn-listo">Capturar</button>
+                        <span class="button-repetir btn-cancelar center-y" id="cancelar" style="display: none;"><a class="btn-repetir">Repetir Captura</a></span>
+                        <span class="button-repetir btn-cancelar center-y" id="guardar" style="display: none;"><a class="btn-repetir">Subir Guifo</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="upload">
+            <div class="span"><p>Subiendo Guifo</p></div>
+            <div class="upload-content">
+                <div class="upload-container">
+                    <img src="images/globe_img.png" alt="globo">
+                    <p>Estamos subiendo tu guifo…</p>
+                    <div class="barra-carga2">
+                        <span id="inicio" class="inicio animacion"></span>
+                        <span class="celdas2">
+                            <span class="celda2"></span>
+                            <span class="celda2"></span>
+                            <span class="celda2"></span>
+                            <span class="celda2"></span>
+                            <span class="celda2"></span>
+                            <span class="celda2"></span>
+                            <span class="celda2"></span>
+                            <span class="celda2"></span>
+                            <span class="celda2"></span>
+                            <span class="celda2"></span>
+                            <span class="celda2"></span>
+                            <span class="celda2"></span>
+                            <span class="celda2"></span>
+                            <span class="celda2"></span>
+                            <span class="celda2"></span>
+                            <span class="celda2"></span>
+                            <span class="celda2"></span>
+                            <span class="celda2"></span>
+                            <span class="celda2"></span>
+                            <span class="celda2"></span>
+                            <span class="celda2"></span>
+                            <span class="celda2"></span>
+                            <span class="celda2"></span>
+                        </span>
+                    </div>
+                    <p>Tiempo restante: <s>38 años</s> algunos minutos</p>
+                </div>
+                <div class="content-btn-cancelar">
+                    <button class="button-capture btn-cancelar" id="uploadCancel">Cancelar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="success">
+            <div class="span"><p>Guifo Subido Con Éxito</p><img src="images/close.svg" alt="boton cerrar" id="cerrar2"></div>
+            <div class="success-content">
+                <div class="success-container">
+                   
+                </div>
+                <div class="content-btn-options">   
+                    <div>
+                        <p>Guifo creado con éxito</p>
+                        <a class="button-success btn-cancelar" id="url">Copiar Enlace Guifo</a>
+                        <a class="button-success btn-cancelar" href="anchor" id="download" download="myGuifo">Descargar Guifo</a>
+                    </div>    
+                    <button class="button-capture btn-comenzar" id="finish">Listo</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="misguifos" class="misguifos">
+            <h4>Mis Guifos</h4>
+            <div class="content-gifs-4"></div>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js"></script>
+    <script src="scripts/upload.js"></script>
+</body>
+</html>

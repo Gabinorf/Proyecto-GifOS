@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>gifOS Gabino</title>
+        <link rel="stylesheet" href="styles/theme1.css" type="text/css">
+        <link rel="stylesheet" href="styles/responsive.css" id="theme" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/responsive.css" type="text/css">
+    </head>
+    <body>
+
+        <header>
+            <h1>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas:</h1>
+        </header>
+
+        <div class="container">
+
+            <nav id="nav">
+                <div class="icon"></div>
+                
+                <div class="content-btns center-y">
+                    <span class="btn-container"><a href="https://gabinoguifos.000webhostapp.com/upload.html#crearguifos">Crear Gifos</a></span> 
+                    <div class="content-themes">
+                        <div class="btn-container space">
+                            <a>Elegir Tema</a>
+                            <div class="hidden" style="display: none;">
+                                <button class="day" onclick="themes(1)"><u>S</u>ailor Day</button>
+                                <button class="night" onclick="themes(2)">Sailor Night</button>
+                            </div>
+                        </div>    
+                        <span class="btn-container">
+                            <a class="llave" id="dropdown">
+                                <img src="images/dropdown.svg" class="flecha" alt="dropdown">
+                            </a>
+                        </span>
+                    </div>
+                    <a href="https://gabinoguifos.000webhostapp.com/upload.html#misguifos" class="mis_guifos center-y"><p>Mis Gifos</p></a>
+                </div>
+            </nav>
+                    
+            <div class="search-bar">
+                <div class="searcher">
+                    <span class="title-search">Buscar</span>
+                    <div class="content-search center-y">
+                        <input type="search" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" id="search">
+                        <span class="btn-search"><button type="button" class="search center-y" disabled><span class="lupa"></span>Buscar</button></span>
+                    </div>
+                </div>
+                <div id="hidden">
+                    <ul class="search-hidden"></ul>
+                </div>
+                <div class="record"></div>
+            </div>    
+            
+            <section class="search-results" id="hidden-results" style="display: none;">
+                <h4 id="busqueda">Búsqueda</h4>  
+                <div class="content-gifs"></div>
+            </section> 
+                 
+            <section class="suggestions">
+                <h2>Hoy te sugerimos:</h2>
+                <div class="content-gifs-2"></div>
+            </section>
+            
+            <section class="trends">
+                <h3>Tendencias:</h3>
+                <div class="content-gifs-3" id="tendencias"></div>
+            </section>
+                    
+        </div>    
+       <script src="scripts/index.js"></script>    
+    </body>
+</html>
+
+
+                        
+            
